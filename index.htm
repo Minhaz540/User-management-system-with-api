@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Understanding API with Axios</title>
+	</head>
+	<body>
+		<div id="root"></div>
+		<button onclick="getData();" style="margin-top: 10px">Show All User Data</button>
+
+		<h2>Show Single User</h2>
+		<form id="singleUser">
+			<input type="text" placeholder="Enter User Id" required />
+			<button type="submit">Find User</button>
+		</form>
+
+		<h2>Add User</h2>
+		<form id="addUser">
+			<input type="text" name="username" id="username" placeholder="Username" required />
+			<input type="email" name="email" id="email" placeholder="Email address" required />
+			<button type="submit">Add User</button>
+		</form>
+
+		<h2>Update User</h2>
+		<form id="updateUser">
+			<input type="text" placeholder="User Id" />
+			<input type="text" name="username" id="username" placeholder="Username" required />
+			<input type="email" name="email" id="email" placeholder="Email address" required />
+			<button type="submit">Update User</button>
+		</form>
+
+		<h2>Delete User</h2>
+		<form id="deleteData">
+			<input type="text" placeholder="Provide user id to delete" required />
+			<button type="submit">Delete User</button>
+		</form>
+
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="./axios.js"></script>
+	</body>
+</html>
